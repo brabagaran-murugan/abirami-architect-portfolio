@@ -9,20 +9,19 @@ navToggle.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
 
-// Close nav on link click (mobile)
 navLinks.addEventListener("click", (e) => {
   if (e.target.tagName === "A") {
     navLinks.classList.remove("open");
   }
 });
 
-// Placeholder projects data
+// Placeholder projects
 const projects = [
   {
     tagline: "Residential concept",
     title: "Earth Courtyard House",
     description:
-      "A calm inner-courtyard home concept with rammed earth walls, filtered daylight, and layered thresholds between inside and outside.",
+      "A courtyard home organized around a planted void, with rammed earth walls, filtered daylight, and layered thresholds.",
     meta: ["Concept study", "Rammed earth", "Inner courtyard"],
     status: "Placeholder · Replace with real project",
     year: "2023"
@@ -31,7 +30,7 @@ const projects = [
     tagline: "Community space",
     title: "Slow Gathering Pavilion",
     description:
-      "An open pavilion for small community events, using timber, soft lighting, and flexible seating to encourage informal gatherings.",
+      "A timber pavilion for small community events, designed as a soft edge between landscape and built form.",
     meta: ["Community", "Timber structure", "Adaptive use"],
     status: "Placeholder · Replace with real project",
     year: "2022"
@@ -40,7 +39,7 @@ const projects = [
     tagline: "Interior architecture",
     title: "Clay & Light Apartment",
     description:
-      "An apartment interior concept with clay plasters, muted textiles, and built-in joinery to create a warm, grounded atmosphere.",
+      "An interior concept using clay plasters, muted textiles, and built-in joinery to create a grounded, quiet home.",
     meta: ["Interior", "Clay plaster", "Soft palette"],
     status: "Placeholder · Replace with real project",
     year: "2021"
@@ -49,7 +48,7 @@ const projects = [
     tagline: "AI-assisted study",
     title: "Topography Retreat",
     description:
-      "Exploration of a hillside retreat where AI-generated visual studies informed massing, light, and material transitions.",
+      "A hillside retreat where AI-generated visual studies informed massing, light, and material transitions.",
     meta: ["AI visualization", "Retreat", "Landscape integration"],
     status: "Placeholder · Replace with real project",
     year: "2024"
@@ -80,7 +79,7 @@ projects.forEach((project) => {
   projectsGrid.appendChild(card);
 });
 
-// Reveal-on-scroll animation for project cards
+// Reveal-on-scroll for project cards
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

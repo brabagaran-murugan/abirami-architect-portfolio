@@ -10,166 +10,214 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero" id="top">
-    <nav class="nav">
-      <div class="logo">AM</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <div class="hero-bg">
+        <div class="hero-bg-image"></div>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-bg-gradient"></div>
+      </div>
 
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="eyebrow">Architect & Spatial Storyteller</p>
-        <h1>Abirami Mohan</h1>
-        <p class="hero-subtitle">
-          Designing calm, human-centered spaces with an earthy, sustainable approach—where light, material, and context meet.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">View Selected Work</a>
-          <a href="#contact" class="btn ghost">Let’s Collaborate</a>
+      <nav class="nav">
+        <div class="nav-left">
+          <div class="logo-mark">
+            <span class="logo-initials">AM</span>
+          </div>
+          <span class="logo-text">Abirami Mohan</span>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card layer-1"></div>
-        <div class="hero-card layer-2"></div>
-        <div class="hero-card layer-3"></div>
-        <div class="hero-orbit"></div>
-      </div>
-    </div>
-  </header>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#ai">AI explorations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+      </nav>
 
-  <main>
-    <!-- About -->
-    <section id="about" class="section about">
-      <div class="section-header">
-        <h2>About</h2>
-        <p>Architecture rooted in earth tones, quiet details, and thoughtful technology.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I’m <strong>Abirami Mohan</strong>, an architect focused on crafting spaces that feel grounded, warm, and intuitive.
-            My work blends natural materials, soft palettes, and emerging tools like AI-assisted visualization to explore
-            new possibilities in spatial design.
+      <div class="hero-inner">
+        <div class="hero-main">
+          <p class="hero-eyebrow">Architect · Melbourne</p>
+          <h1>Designing calm, grounded spaces with a modern edge.</h1>
+          <p class="hero-subtitle">
+            I’m <strong>Abirami Mohan</strong>, an architect exploring earthy materiality, soft light, and AI-assisted
+            visual studies to shape spaces that feel quiet, intentional, and deeply human.
           </p>
-          <p>
-            From residential retreats to community spaces, I’m interested in how architecture can slow us down, invite
-            reflection, and respond gently to its surroundings.
-          </p>
-          <ul class="about-tags">
-            <li>Earthy minimalism</li>
-            <li>Human-centered design</li>
-            <li>AI-assisted concept studies</li>
-            <li>Sustainable thinking</li>
-          </ul>
-        </div>
-        <div class="about-meta">
-          <div class="meta-block">
-            <h3>Focus areas</h3>
-            <p>Residential, small-scale public spaces, interior architecture, and conceptual studies.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View portfolio</a>
+            <a href="#ai" class="btn ghost">AI + architecture</a>
           </div>
-          <div class="meta-block">
-            <h3>Tools</h3>
-            <p>Revit, Rhino, SketchUp, Adobe Suite, AI visualization tools, hand sketching.</p>
+          <div class="hero-meta">
+            <span>Residential & interior architecture</span>
+            <span>Earthy minimalism</span>
+            <span>AI concept workflows</span>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section projects">
-      <div class="section-header">
-        <h2>Selected projects</h2>
-        <p>Placeholder projects—replace with your real work when ready.</p>
-      </div>
-
-      <div class="projects-grid" id="projects-grid">
-        <!-- Cards injected dynamically by script.js -->
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section id="process" class="section process">
-      <div class="section-header">
-        <h2>Design process</h2>
-        <p>A calm, iterative journey from context to crafted detail.</p>
-      </div>
-      <div class="process-steps">
-        <div class="process-step">
-          <span class="step-number">01</span>
-          <h3>Listen & observe</h3>
-          <p>Understanding site, climate, and the everyday rituals of the people who will inhabit the space.</p>
-        </div>
-        <div class="process-step">
-          <span class="step-number">02</span>
-          <h3>Explore & sketch</h3>
-          <p>Hand sketches, physical models, and AI-assisted visual studies to test light, massing, and mood.</p>
-        </div>
-        <div class="process-step">
-          <span class="step-number">03</span>
-          <h3>Refine & detail</h3>
-          <p>Translating concepts into buildable drawings, material palettes, and tactile experiences.</p>
-        </div>
-        <div class="process-step">
-          <span class="step-number">04</span>
-          <h3>Collaborate & deliver</h3>
-          <p>Working closely with clients, consultants, and makers to bring the design to life.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-      <div class="section-header">
-        <h2>Contact</h2>
-        <p>Open to collaborations, competitions, and concept explorations.</p>
-      </div>
-      <div class="contact-grid">
-        <div>
-          <p>
-            For inquiries, portfolio requests, or collaborations, feel free to reach out.
-            Replace the placeholders below with your real contact details.
-          </p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <span>your.email@example.com</span></li>
-            <li><strong>Location:</strong> <span>Melbourne, Australia</span></li>
-            <li><strong>LinkedIn:</strong> <span>linkedin.com/in/your-profile</span></li>
-            <li><strong>Instagram:</strong> <span>@your.architecture.handle</span></li>
-          </ul>
-        </div>
-        <form class="contact-form" onsubmit="return false;">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" />
+        <aside class="hero-profile">
+          <div class="profile-card">
+            <div class="profile-photo-wrap">
+              <!-- Replace with your real photo -->
+              <img src="assets/abirami-profile.jpg" alt="Portrait of Abirami Mohan" class="profile-photo" />
+            </div>
+            <div class="profile-text">
+              <h2>Abirami Mohan</h2>
+              <p>Architect · Spatial storyteller</p>
+              <p class="profile-note">
+                Focused on warm, tactile spaces with a restrained palette and thoughtful details.
+              </p>
+            </div>
+            <div class="profile-tags">
+              <span>Revit</span>
+              <span>Rhino</span>
+              <span>SketchUp</span>
+              <span>Adobe Suite</span>
+            </div>
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Your email" />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Tell me about your project or idea"></textarea>
-          </div>
-          <button class="btn primary" type="submit">Send (placeholder)</button>
-          <p class="form-note">
-            This form is a visual placeholder. Connect it to a real service (e.g., Formspree) when you’re ready.
-          </p>
-        </form>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Abirami Mohan · Architect</p>
-    <a href="#top" class="back-to-top">Back to top</a>
-  </footer>
+          <div class="floating-panel">
+            <p class="floating-label">Currently exploring</p>
+            <p class="floating-text">
+              AI-generated mood studies for early massing, light, and material decisions.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span class="scroll-dot"></span>
+        <span>Scroll to explore</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- About -->
+      <section id="about" class="section about">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>Architecture that feels grounded, quiet, and deeply connected to its context.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I design spaces that prioritize calm, tactility, and light. My work leans into earthy palettes, natural
+              textures, and simple forms that age gracefully over time.
+            </p>
+            <p>
+              Alongside traditional tools, I use AI as a sketching partner—testing moods, atmospheres, and spatial
+              ideas early in the process without replacing the rigor of architectural thinking.
+            </p>
+            <div class="about-pills">
+              <span>Residential retreats</span>
+              <span>Interior architecture</span>
+              <span>Community spaces</span>
+              <span>Conceptual studies</span>
+            </div>
+          </div>
+          <div class="about-meta">
+            <article class="meta-card">
+              <h3>Approach</h3>
+              <p>
+                Listen first, then respond with spaces that feel intuitive, warm, and quietly expressive rather than loud.
+              </p>
+            </article>
+            <article class="meta-card">
+              <h3>Values</h3>
+              <p>
+                Material honesty, daylight, human scale, and a gentle integration with landscape and existing fabric.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <div class="section-header">
+          <h2>Selected projects</h2>
+          <p>Currently using placeholders—swap these with your real projects when you’re ready.</p>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Cards injected by script.js -->
+        </div>
+      </section>
+
+      <!-- AI explorations -->
+      <section id="ai" class="section ai">
+        <div class="section-header">
+          <h2>AI explorations</h2>
+          <p>Using AI as a visual sketchbook—not as a replacement for design thinking.</p>
+        </div>
+        <div class="ai-grid">
+          <article class="ai-card">
+            <h3>Atmosphere studies</h3>
+            <p>
+              Quick AI-generated mood images to test light, texture, and spatial feeling before committing to a direction.
+            </p>
+            <p class="ai-note">Placeholder · Add your own AI visuals or process screenshots here.</p>
+          </article>
+          <article class="ai-card">
+            <h3>Material palettes</h3>
+            <p>
+              Combining clay, timber, stone, and fabric references into AI prompts to explore subtle palette variations.
+            </p>
+          </article>
+          <article class="ai-card">
+            <h3>Section & massing ideas</h3>
+            <p>
+              Early massing and sectional ideas tested through AI to spark alternatives, then refined in Revit/Rhino.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Open to collaborations, competitions, and concept-driven projects.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>
+              Replace the placeholders below with your real details. You can also link this form to a service like
+              Formspree or a custom backend later.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <span>your.email@example.com</span></li>
+              <li><strong>Location:</strong> <span>Melbourne, Australia</span></li>
+              <li><strong>LinkedIn:</strong> <span>linkedin.com/in/your-profile</span></li>
+              <li><strong>Instagram:</strong> <span>@your.architecture.handle</span></li>
+            </ul>
+          </div>
+          <form class="contact-form" onsubmit="return false;">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Your email" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell me about your project or idea"></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send (placeholder)</button>
+            <p class="form-note">
+              This form is visual only. Connect it to a real service when you’re ready.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Abirami Mohan · Architect</p>
+      <a href="#top" class="back-to-top">Back to top</a>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
