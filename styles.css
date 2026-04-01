@@ -321,13 +321,15 @@ body {
   }
 }
 
-.profile-photo-wrap {
-  width: 90px;
-  height: 90px;
+profile-photo-wrap {
+  width: 260px;          /* Increased from 90px */
+  height: 320px;         /* Increased from 120px */
   border-radius: 26px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.25);
   background: #111;
+  margin: 2rem auto;     /* Centers the wrapper */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
 }
 
 .profile-photo {
